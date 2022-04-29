@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -57,16 +57,7 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 */
 
 body {
-  font-family:
-		system-ui,
-		-apple-system, /* Firefox supports this but not yet `system-ui` */
-		'Segoe UI',
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji';
+  font-family: 'Amatic SC', cursive;
 }
 
 /*
@@ -118,13 +109,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family:
-		ui-monospace,
-		SFMono-Regular,
-		Consolas,
-		'Liberation Mono',
-		Menlo,
-		monospace;
+  font-family: 'Amatic SC', cursive;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -190,7 +175,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
+  font-family: 'Amatic SC', cursive;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -373,7 +358,7 @@ ul {
  */
 
 html {
-  font-family: Fira sans, sans-serif;
+  font-family: 'Amatic SC', cursive;
   /* 1 */
   line-height: 1.5;
   /* 2 */
@@ -385,7 +370,7 @@ html {
  */
 
 body {
-  font-family: inherit;
+  font-family: 'Amatic SC', cursive;
   line-height: inherit;
 }
 
@@ -540,7 +525,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'Amatic SC', cursive;
 }
 
 /**
@@ -596,7 +581,7 @@ video {
 }
 
 .container {
-  width: 100%;
+  width: 40%;
 }
 
 @media (min-width: 640px) {
@@ -644,21 +629,12 @@ video {
   margin-right: 1rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .flex {
@@ -667,10 +643,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-80 {
-  height: 20rem;
 }
 
 .h-auto {
@@ -682,7 +654,7 @@ video {
 }
 
 .flex-1 {
-  flex: 1 1 0%;
+  flex: 1 1 100%;
 }
 
 .flex-wrap {
@@ -721,12 +693,12 @@ video {
 }
 
 .from-purple-500 {
-  --tw-gradient-from: #8b5cf6;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(139, 92, 246, 0));
+  --tw-gradient-from: #64ffda;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(76, 0, 255, 0));
 }
 
 .to-pink-500 {
-  --tw-gradient-to: #ec4899;
+  --tw-gradient-to: #64ffda;
 }
 
 .p-4 {
@@ -734,7 +706,6 @@ video {
 }
 
 .py-4 {
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -753,17 +724,18 @@ video {
 }
 
 .text-2xl {
-  font-size: 1.5rem;
+  font-size: 3rem;
   line-height: 2rem;
+  font-family: 'Amatic SC', cursive;
 }
 
 .text-xl {
-  font-size: 1.25rem;
+  font-size: 2rem;
   line-height: 1.75rem;
 }
 
 .text-lg {
-  font-size: 1.125rem;
+  font-size: 2rem;
   line-height: 1.75rem;
 }
 
@@ -799,15 +771,6 @@ video {
   transition-duration: 300ms;
 }
 
-.hover\:from-purple-600:hover {
-  --tw-gradient-from: #7c3aed;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(124, 58, 237, 0));
-}
-
-.hover\:to-pink-600:hover {
-  --tw-gradient-to: #db2777;
-}
-
 .hover\:opacity-90:hover {
   opacity: 0.9;
 }
@@ -815,3 +778,21 @@ video {
 .disabled\:opacity-50:disabled {
   opacity: 0.5;
 }
+
+footer {
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+img {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 1rem auto;
+}
+
+.app-logo {
+  width: 50%;
+}
+

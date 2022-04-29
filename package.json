@@ -11,6 +11,10 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"tailwindcss": "^2.2.15"
+		"live-server": "^1.2.2",
+		"tailwindcss": "^2.2.19"
+	},
+	"dependencies": {
+		"caniuse-lite": "^1.0.30001334"
 	}
 }
