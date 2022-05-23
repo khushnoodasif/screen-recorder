@@ -1,9 +1,6 @@
 name: "📚 Readme Updater"
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
   schedule:
     - cron: '0 11 * * *'
 
