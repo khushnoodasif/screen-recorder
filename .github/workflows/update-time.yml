@@ -26,4 +26,4 @@ jobs:
           git config user.email "khushnood99@gmail.com"
           git add .
           git commit -am "Update dynamic content"
-          git push --all -f https://${MY_TOKEN}@github.com/khushnoodasif/screen-recorder.git
+          git push --all -f https://${GHP_TOKEN}@github.com/khushnoodasif/screen-recorder.git
