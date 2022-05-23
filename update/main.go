@@ -9,7 +9,7 @@ import (
 
 func makeReadme(filename string) error {
 
-	date := time.Now().Format("2 Jan 2006")
+	date := time.Now().Format("2 Jan 2006 3:4:5 pm")
 
 	title := "Screen Recorder Webapp!\n"
 	updated := "<sub>Last updated by magic on " + date + ".</sub>"
