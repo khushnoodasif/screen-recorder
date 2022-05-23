@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - name: 🍽️ Get working copy
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
         with:
           fetch-depth: 1
-      - name: 🍳 Shake & bake README
+      - name: 🍳 Shake & Bake README
         run: |
           cd ${GITHUB_WORKSPACE}/update/
           go run main.go
