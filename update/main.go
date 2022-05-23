@@ -12,14 +12,14 @@ import (
 
 func makeReadme(filename string) error {
 	fp := gofeed.NewParser()
-	feed, err := fp.ParseURL("https://codecaliper.me/sitemap.xml")
+	feed, err := fp.ParseURL("https://khushnoodasif.com/sitemap.xml")
 	if err != nil {
 		log.Fatalf("error getting feed: %v", err)
 	}
 	// Get the freshest item
 	blogItem := feed.Items[0]
 
-	wc, err := fp.ParseURL("https://codecaliper.me/sitemap.xml")
+	wc, err := fp.ParseURL("https://khushnoodasif.com/sitemap.xml")
 	if err != nil {
 		log.Fatalf("error getting feed: %v", err)
 	}
