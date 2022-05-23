@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '35 19 * * *'
+    - cron: '00 11 * * *'
 
 jobs:
   build-and-deploy:
