@@ -11,9 +11,9 @@ func makeReadme(filename string) error {
 
 	date := time.Now().Format("2 Jan 2006")
 
-	blog := "You might like my latest blog post!\n"
+	title := "Screen Recorder Webapp!\n"
 	updated := "<sub>Last updated by magic on " + date + ".</sub>"
-	data := fmt.Sprintf("%s\n\n%s\n", blog, updated)
+	data := fmt.Sprintf("%s\n\n%s\n", title, updated)
 
 	// Prepare file with a light coating of os
 	file, err := os.Create(filename)
