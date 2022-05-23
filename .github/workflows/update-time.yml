@@ -22,8 +22,8 @@ jobs:
           go run main.go
       - name: 🚀 Deploy
         run: |
-          git config user.name "${USER_NAME}"
-          git config user.email "${USER_NAME}@users.noreply.github.com"
+          git config user.name "khushnoodasif"
+          git config user.email "khushnood99@gmail.com"
           git add .
           git commit -am "Update dynamic content"
           git push --all -f https://${MY_TOKEN}@github.com/${MY_REPOSITORY}.git
