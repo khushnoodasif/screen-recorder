@@ -3,11 +3,8 @@ package main
 import (
 	"fmt"
 	"io"
-	"log"
 	"os"
 	"time"
-
-	"github.com/mmcdole/gofeed"
 )
 
 func makeReadme(filename string) error {
@@ -16,7 +13,7 @@ func makeReadme(filename string) error {
 
 	blog := "You might like my latest blog post!\n"
 	updated := "<sub>Last updated by magic on " + date + ".</sub>"
-	data := fmt.Sprintf("%s\n\n%s\n\n%s\n", blog, updated)
+	data := fmt.Sprintf("%s\n\n%s\n", blog, updated)
 
 	// Prepare file with a light coating of os
 	file, err := os.Create(filename)
