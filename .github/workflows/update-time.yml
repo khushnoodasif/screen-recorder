@@ -1,0 +1,29 @@
+name: "Readme Update"
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '20 19 * * *'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🍽️ Update README
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+      - name: 🍳 Build
+        run: |
+          cd ${GITHUB_WORKSPACE}/update/
+          go run main.go
+      - name: 🚀 Deploy
+        run: |
+          git config user.name "khushnoodasif"
+          git config user.email "khushnood99@gmail.com"
+          git add .
+          git commit -am "Update dynamic content"
+          git push --all -f https://${GHP_TOKEN}@github.com/khushnoodasif/screen-recorder.git
