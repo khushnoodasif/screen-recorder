@@ -1,4 +1,4 @@
 Screen Recorder Webapp!
 
 
-<sub>Last Updated: 21 Sep 2022 11:10 AM.</sub>
+<sub>Last Updated: 22 Sep 2022 11:9 AM.</sub>
